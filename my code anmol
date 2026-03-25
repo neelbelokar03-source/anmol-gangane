@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Anmol Sharad Gangane Portal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 50px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: -30px auto 50px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 { margin-bottom: 10px; font-size: 2.5em; }
+        .badge {
+            background: #ffd700;
+            color: #333;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #2a5298;
+        }
+        .stat-card h3 { color: #2a5298; margin: 0 0 10px 0; }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #777;
+        }
+        button {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Anmol Sharad Gangane</h1>
+    <div class="badge">Official 11th Standard Legend</div>
+    <p>Recognizing the brain that works faster than a calculator.</p>
+</header>
+
+<div class="container">
+    <h2>Current Academic Status: Unstoppable</h2>
+    <p>This page is dedicated to the man who makes the 11th-grade syllabus look like a nursery rhyme.</p>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>I.Q. Level</h3>
+            <p>Error: Off the charts</p>
+        </div>
+        <div class="stat-card">
+            <h3>Books Read</h3>
+            <p>All of them. Twice.</p>
+        </div>
+        <div class="stat-card">
+            <h3>Sleep Required</h3>
+            <p>None. He dreams in Physics.</p>
+        </div>
+        <div class="stat-card">
+            <h3>Pen Speed</h3>
+            <p>Mach 2.0</p>
+        </div>
+    </div>
+
+    <hr style="margin: 40px 0; border: 0.5px solid #eee;">
+    
+    <h3>The "Anmol Fact" of the Day:</h3>
+    <p><em>"Anmol doesn't find the X in Algebra. X finds Anmol and begs for the answer."</em></p>
+
+    <button onclick="alert('Warning: You are not smart enough to access Anmols secret notes!')">
+        Access Secret Notes
+    </button>
+
+    <div class="footer">
+        © 2026 The Anmol Sharad Gangane International Fan Club <br>
+        (Authorized by the Board of Genius Students)
+    </div>
+</div>
+
+</body>
+</html>
