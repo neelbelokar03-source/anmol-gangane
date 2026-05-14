@@ -3,112 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Official Anmol Sharad Gangane Portal</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            text-align: center;
-        }
-        header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 50px 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-        .container {
-            max-width: 800px;
-            margin: -30px auto 50px;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        h1 { margin-bottom: 10px; font-size: 2.5em; }
-        .badge {
-            background: #ffd700;
-            color: #333;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .stat-card {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 5px solid #2a5298;
-        }
-        .stat-card h3 { color: #2a5298; margin: 0 0 10px 0; }
-        .footer {
-            margin-top: 40px;
-            font-size: 0.8em;
-            color: #777;
-        }
-        button {
-            background: #e74c3c;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-    </style>
+    <title>MediLab Diagnostics | #1 Trusted Lab in Your City</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007BFF">
 </head>
 <body>
-
-<header>
-    <h1>Anmol Sharad Gangane</h1>
-    <div class="badge">Official 11th Standard Legend</div>
-    <p>Recognizing the brain that works faster than a calculator.</p>
-</header>
-
-<div class="container">
-    <h2>Current Academic Status: Unstoppable</h2>
-    <p>This page is dedicated to the man who makes the 11th-grade syllabus look like a nursery rhyme.</p>
-
-    <div class="stats-grid">
-        <div class="stat-card">
-            <h3>I.Q. Level</h3>
-            <p>Error: Off the charts</p>
-        </div>
-        <div class="stat-card">
-            <h3>Books Read</h3>
-            <p>All of them. Twice.</p>
-        </div>
-        <div class="stat-card">
-            <h3>Sleep Required</h3>
-            <p>None. He dreams in Physics.</p>
-        </div>
-        <div class="stat-card">
-            <h3>Pen Speed</h3>
-            <p>Mach 2.0</p>
-        </div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
     </div>
 
-    <hr style="margin: 40px 0; border: 0.5px solid #eee;">
-    
-    <h3>The "Anmol Fact" of the Day:</h3>
-    <p><em>"Anmol doesn't find the X in Algebra. X finds Anmol and begs for the answer."</em></p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-vial"></i>
+                <span>MediLab DX</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#book">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
 
-    <button onclick="alert('Warning: You are not smart enough to access Anmols secret notes!')">
-        Access Secret Notes
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="animate-slide">Trusted #1 Diagnostic Lab</h1>
+                <p class="animate-slide delay-1">4.9⭐ (2,847 Reviews) | 24/7 Emergency | Home Collection</p>
+                <div class="stats animate-slide delay-2">
+                    <div class="stat">
+                        <h3>50K+</h3>
+                        <span>Happy Patients</span>
+                    </div>
+                    <div class="stat">
+                        <h3>10K+</h3>
+                        <span>Tests Monthly</span>
+                    </div>
+                    <div class="stat">
+                        <h3>2 Hours</h3>
+                        <span>Fast Reports</span>
+                    </div>
+                </div>
+                <div class="hero-buttons animate-slide delay-3">
+                    <a href="#book" class="btn-primary">Book Test Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-secondary">Call: +91 98765 43210</a>
+                </div>
+            </div>
+            <div class="hero-image animate-slide delay-4">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Lab">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Premium Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Complete Blood Test</h3>
+                    <p>CBC, ESR, Blood Sugar, Lipids & More</p>
+                    <div class="price">₹299 <span>was ₹450</span></div>
+                    <a href="#book" class="btn-sm">Book Now</a>
+                </div>
+                <!-- 7 More Cards Same Pattern -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3>Full Body Checkup</h3>
+                    <p>85+ Tests | Complete Health Package</p>
+                    <div class="price">₹1,499 <span>was ₹2,500</span></div>
+                    <a href="#book" class="btn-sm">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Collection</h3>
+                    <p>Free Pickup | Phlebotomist at Doorstep</p>
+                    <div class="price">FREE</div>
+                    <a href="#book" class="btn-sm">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="booking">
+        <div class="container">
+            <div class="booking-form">
+                <h2>Book Test in 30 Seconds</h2>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Phone" required>
+                        <input type="date">
+                    </div>
+                    <select>
+                        <option>Select Test Package</option>
+                        <option>Complete Blood Test - ₹299</option>
+                        <option>Full Body Checkup - ₹1499</option>
+                    </select>
+                    <button type="submit" class="btn-primary full">Confirm Booking <i class="fab fa-whatsapp"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Patients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Fastest reports ever! Home collection was perfect."</p>
+                    <div class="author">Ravi Sharma</div>
+                </div>
+                <!-- More testimonials -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Visit Us Today</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>Sco 123, Main Market<br>Your City - 160XXX</div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>+91 98765 43210<br>+91 98765 43211</div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>Mon-Sat: 7AM - 9PM<br>Sun: 8AM - 2PM</div>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-header">
+            <span>MediLab Assistant</span>
+            <i class="fas fa-times" id="closeChat"></i>
+        </div>
+        <div class="chatbot-body">
+            <div class="message bot">Hi! Need help booking tests? 😊</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type message...">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chat-toggle" id="chatToggle">
+        <i class="fas fa-comments"></i>
     </button>
 
-    <div class="footer">
-        © 2026 The Anmol Sharad Gangane International Fan Club <br>
-        (Authorized by the Board of Genius Students)
-    </div>
-</div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MediLab Diagnostics. All Rights Reserved | Powered by <strong>YourWebPro</strong></p>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
